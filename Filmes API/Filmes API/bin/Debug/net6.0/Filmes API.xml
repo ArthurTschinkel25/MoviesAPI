@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Filmes API</name>
+    </assembly>
+    <members>
+        <member name="M:Filmes_API.Controllers.MovieController.AddMovie(Filmes_API.Data.Dtos.CreateMovieDto)">
+            <summary>
+            Add a movie to the database
+            </summary>
+            <response code="201">In case it's succeeded</response>
+        </member>
+        <member name="M:Filmes_API.Controllers.MovieController.ReadMovies(System.Int32,System.Int32)">
+            <summary>
+            Read all the movies included on the database
+            </summary>
+            <response code="200">In case it's succeeded</response>
+        </member>
+        <member name="M:Filmes_API.Controllers.MovieController.RecoverMovieById(System.Int32)">
+            <summary>
+            Read a single movie by it's id on the database
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">In case it's succeeded</response>
+        </member>
+        <member name="M:Filmes_API.Controllers.MovieController.RecoverMovieByGenre(System.String)">
+            <summary>
+            Read a movie by it's genre
+            </summary>
+            <response code="200">In case it's succeeded</response>
+        </member>
+        <member name="M:Filmes_API.Controllers.MovieController.UpdateMovie(System.Int32,Filmes_API.Data.Dtos.UpdateMovieDto)">
+             <summary>
+             Update a entire movie on the database
+             </summary>
+            <returns>IActionResult</returns>
+        </member>
+        <member name="M:Filmes_API.Controllers.MovieController.UpdateMoviePatch(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Filmes_API.Data.Dtos.UpdateMovieDto})">
+            <summary>
+            Update a specific property of a movie on the database
+            </summary>
+            <returns>IActionResult</returns>
+        </member>
+        <member name="M:Filmes_API.Controllers.MovieController.DeletMovies(System.Int32)">
+            <summary>
+            Delete a movie from database
+            </summary>
+        </member>
+    </members>
+</doc>
